@@ -1,0 +1,14 @@
+## Interface: 120005, 110000, 40402
+## Title: LiteTaxiTimer
+## Version: @project-version@
+## Author: Xodiv-Nagrand
+## Email: mib@post.com
+## IconTexture: 0
+## SavedVariables: LiteTaxiTimerDB
+## X-Curse-Project-ID: 
+## X-WoWI-ID: 
+
+FlightPoint.lua
+Journey.lua
+
+Core.lua
