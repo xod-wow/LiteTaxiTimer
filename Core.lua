@@ -68,7 +68,7 @@ end
 
 function LTT.addon:EndTaxiFlight(isAborted)
     if not isAborted then
-        local ft = GetTime() - self.flightStartTime
+        local ft = math.floor(10 * (GetTime() - self.flightStartTime)) / 10
         print('Flight time: ' .. tostring(ft))
         self.journey:SaveDuration(ft)
     end
@@ -154,7 +154,6 @@ function LTT.addon:NewJourney(uiMapSystem)
 end
 
 function LTT.addon:OnEvent(event, ...)
-    print(event)
     if event == 'PLAYER_LOGIN' then
         self:Initialize()
     elseif event == 'TAXIMAP_OPENED' then
